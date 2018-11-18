@@ -35,7 +35,6 @@ public class UserController {
     {
         User user = userRepository.findOne(userId);
         user.setName(userObject.getName());
-        user.setCountry(userObject.getCountry());
         return userRepository.save(user);
     }
 
